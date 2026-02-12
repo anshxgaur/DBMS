@@ -29,7 +29,8 @@ graph TD;
     Manager1 --> EmployeeA;
     Manager1 --> EmployeeB;
     Manager2 --> EmployeeC;
-2. Network Database Model
+---
+###2. Network Database Model
 Concept: An extension of the hierarchical model that allows for more flexible relationships. Data is organized as a graph rather than a tree.
 
 Structure: Graph structure.
@@ -52,6 +53,7 @@ graph TD;
     StoreB --> Product2;
     VendorX --> StoreA;
     VendorY --> StoreB;
+---
 3. Relational Database Model (RDBMS)
 Concept: The most widely used model today. Data is stored in structured tables (relations) which are linked by common data elements (keys).
 
@@ -76,7 +78,8 @@ erDiagram
         int customer_id FK
         date order_date
     }
-4. Object-Oriented Database Model (OODBMS)
+---
+###4. Object-Oriented Database Model (OODBMS)
 Concept: Data is represented in the form of objects, similar to Object-Oriented Programming (OOP). This is ideal for handling complex data structures that don't fit well into rows and columns.
 
 Key Features: Supports Classes, Objects, Inheritance, Encapsulation, and Polymorphism.
@@ -85,7 +88,9 @@ Use Cases: Multimedia files, graphics, scientific simulations, CAD (Computer-Aid
 
 Examples: ObjectDB, db4o.
 
-5. Object-Relational Database Model (ORDBMS)
+---
+
+###5. Object-Relational Database Model (ORDBMS)
 Concept: A hybrid model that builds upon the relational model by adding object-oriented features. Data is still stored in tables, but the database supports complex data types and methods.
 
 Structure: Table-based but with object capabilities.
@@ -94,7 +99,8 @@ Advantages: Combines the scalability of RDBMS with the flexibility of OODBMS.
 
 Examples: PostgreSQL, Oracle Database.
 
-☁️ Cloud Database
+---
+###☁️ Cloud Database
 Concept: A database that runs on a cloud computing platform. It provides database services over the internet, offering high flexibility and scalability without the need for physical hardware management.
 
 Benefits:
@@ -111,9 +117,9 @@ Amazon Web Services (AWS): Amazon RDS, DynamoDB.
 
 Google Cloud Platform (GCP): Cloud SQL, Firestore.
 
-Microsoft Azure: Azure SQL Database.
-
-🚀 NoSQL DBMS (Not Only SQL)
+Microsoft Azur
+---
+###🚀 NoSQL DBMS (Not Only SQL)
 Concept: Designed to handle massive volumes of data, specifically unstructured or semi-structured data (Big Data). Unlike RDBMS, NoSQL databases do not use a fixed tabular schema.
 
 Key Features:
