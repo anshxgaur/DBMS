@@ -1,25 +1,21 @@
 🗄️ Database Management Systems (DBMS)
 📖 Introduction
 
-A Database Management System (DBMS) is software designed to store, manage, retrieve, and organize data efficiently. It acts as an interface between users/applications and the database, ensuring data is consistently structured, secure, and easily accessible.
+A Database Management System (DBMS) is software designed to store, manage, retrieve, and organize data efficiently.
+It acts as an interface between users/applications and the database, ensuring data is consistently structured, secure, and easily accessible.
 
 🎯 Key Objectives of DBMS
 
-Reduce Redundancy – Minimizes duplicate data through centralized control.
-
-Ensure Consistency – Maintains data integrity across the system.
-
-Data Access & Management – Supports concurrent access, transaction management, and backup/recovery mechanisms.
-
-Security – Protects data from unauthorized access.
-
-Data Integrity – Enforces rules and constraints to maintain accuracy.
+✅ Reduce Redundancy – Minimizes duplicate data through centralized control.
+✅ Ensure Consistency – Maintains data integrity across the system.
+✅ Data Access & Management – Supports concurrent access, transactions, and recovery.
+✅ Security – Protects data from unauthorized access.
+✅ Data Integrity – Enforces rules and constraints for accurate data.
 
 🗂️ Types of Database Models
 1️⃣ Hierarchical Database Model
-📌 Concept
 
-Data is organized in a tree-like structure where records are connected through parent-child relationships.
+Concept: Data organized in a tree-like parent–child structure
 
 Structure: Tree
 
@@ -27,13 +23,8 @@ Relationship: One-to-Many (1:N)
 
 Constraint: Each child has exactly one parent
 
-📍 Examples
+Examples: File systems, organizational charts
 
-File systems
-
-Organizational charts
-
-📊 Diagram
 graph TD;
     CEO --> Manager1;
     CEO --> Manager2;
@@ -42,9 +33,8 @@ graph TD;
     Manager2 --> EmployeeC;
 
 2️⃣ Network Database Model
-📌 Concept
 
-An extension of the hierarchical model that allows multiple parent relationships. Data is organized as a graph instead of a tree.
+Concept: Extension of hierarchical model allowing multiple parent relationships
 
 Structure: Graph
 
@@ -52,13 +42,8 @@ Relationship: Many-to-Many (M:N)
 
 Flexibility: A child can have multiple parents
 
-📍 Examples
+Examples: Telecom networks, transportation systems
 
-Telecom networks
-
-Transportation systems
-
-📊 Diagram
 graph TD;
     StoreA --> Laptop;
     StoreA --> Phone;
@@ -68,11 +53,8 @@ graph TD;
     VendorY --> StoreB;
 
 3️⃣ Relational Database Model (RDBMS)
-📌 Concept
 
-The most widely used database model. Data is stored in tables (relations) and linked using keys.
-
-Tables: Relations
+Concept: Most widely used model with data stored in tables
 
 Rows: Tuples (records)
 
@@ -80,7 +62,7 @@ Columns: Attributes (fields)
 
 Keys: Primary Key (PK), Foreign Key (FK)
 
-📍 Examples
+Popular RDBMS Systems:
 
 MySQL
 
@@ -88,9 +70,8 @@ PostgreSQL
 
 Microsoft SQL Server
 
-Oracle
+Oracle Database
 
-📊 ER Diagram
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     CUSTOMER {
@@ -105,115 +86,73 @@ erDiagram
     }
 
 4️⃣ Object-Oriented Database Model (OODBMS)
-📌 Concept
 
-Data is represented as objects, similar to Object-Oriented Programming (OOP).
+Concept: Data stored as objects similar to OOP
 
-🔑 Key Features
+Features: Classes, inheritance, encapsulation, polymorphism
 
-Classes & Objects
+Use Cases: Multimedia, CAD, scientific simulations
 
-Inheritance
-
-Encapsulation
-
-Polymorphism
-
-📍 Use Cases
-
-Multimedia systems
-
-CAD (Computer-Aided Design)
-
-Scientific simulations
-
-📍 Examples
+Examples:
 
 ObjectDB
 
 db4o
 
 5️⃣ Object-Relational Database Model (ORDBMS)
-📌 Concept
 
-A hybrid model that combines relational structure with object-oriented features.
+Hybrid of relational and object-oriented approaches
 
-Table-based storage
+Supports complex data types and user-defined methods
 
-Supports complex data types
-
-Allows user-defined types and methods
-
-📍 Examples
-
-PostgreSQL
-
-Oracle Database
+Examples: PostgreSQL, Oracle Database
 
 ☁️ Cloud Databases
-📌 Concept
 
-Databases hosted on cloud platforms that provide scalable and managed database services.
+Databases hosted on cloud platforms with managed services.
 
-✅ Benefits
+Benefits
 
-Scalability – Scale storage and computing power easily
+✔ Scalability
+✔ Global accessibility
+✔ Cost efficiency
+✔ Automated backups
 
-Accessibility – Access from anywhere via the internet
+Major Cloud Providers
 
-Cost-Effective – Pay-as-you-go pricing
+Amazon Web Services
 
-Managed Services – Automated backups and updates
+AWS
 
-📍 Examples
+Amazon RDS
 
-AWS: Amazon RDS, DynamoDB
+DynamoDB
 
-GCP: Cloud SQL, Firestore
+Google Cloud Platform
 
-Microsoft Azure: Azure SQL Database
+GCP
 
-🚀 NoSQL Databases (Not Only SQL)
-📌 Concept
+Cloud SQL
 
-Designed for handling large volumes of unstructured or semi-structured data. No fixed tabular schema is required.
+Firestore
 
-🔑 Key Features
+Microsoft Azure
 
-High performance
+Azure
 
-Horizontal scalability
+Azure SQL Database
 
-Flexible schema
+🚀 NoSQL Databases
 
-Optimized for big data applications
+Designed for large-scale unstructured or semi-structured data.
 
-📚 Types of NoSQL Databases
-1️⃣ Key-Value Stores
+Key Features
 
-Redis
+✔ High performance
+✔ Horizontal scalability
+✔ Flexible schema
 
-Amazon DynamoDB
-
-2️⃣ Document Stores
-
-MongoDB
-
-CouchDB
-
-3️⃣ Column-Family Stores
-
-Cassandra
-
-HBase
-
-4️⃣ Graph Databases
-
-Neo4j
-
-Amazon Neptune
-
-📊 Diagram
+Types of NoSQL Databases
 mindmap
   root((NoSQL Types))
     Key-Value
@@ -229,27 +168,52 @@ mindmap
       Neo4j
       Amazon Neptune
 
+
+Examples by Category
+
+Key-Value → Redis
+
+Document → MongoDB, CouchDB
+
+Column-Family → Cassandra, HBase
+
+Graph → Neo4j, Amazon Neptune
+
 ⚡ ACID Properties
+Property	Meaning
+Atomicity	Transaction completes fully or not at all
+Consistency	Database remains valid before and after transaction
+Isolation	Transactions execute independently
+Durability	Committed changes are permanent
+📌 ER Model Concept
 
-To ensure reliable and secure transactions, DBMS systems follow ACID properties:
+The Entity–Relationship (ER) Model is a conceptual framework used to represent data and relationships in a database.
 
-Atomicity – A transaction either completes fully or not at all.
+Purpose
 
-Consistency – The database remains in a valid state before and after a transaction.
+✔ Models real-world objects
+✔ Simplifies database design
+✔ Easy visualization of relationships
+✔ Standard representation of schema
 
-Isolation – Transactions execute independently without interference.
+🔑 Components of an ER Diagram
+Component	Description	Symbol
+Entities	Real-world objects	Rectangle
+Attributes	Characteristics of entities	Ellipse
+Relationships	Associations between entities	Diamond
+Lines	Connect elements	Line
+🏷️ Types of Entities
 
-Durability – Once committed, changes remain permanent even after system failure.
+Strong Entity → Independent
 
-📌 Conclusion
+Weak Entity → Depends on strong entity
 
-DBMS plays a crucial role in modern software systems by ensuring structured data storage, integrity, security, and scalability. From traditional relational databases to modern NoSQL and cloud databases, different models serve different application needs.
+🏷️ Types of Attributes
 
-🤝 Contributing
+Single-valued
 
-Contributions, issues, and feature requests are welcome!
-Feel free to fork this repository and submit a pull request.
+Multi-valued
 
-📝 License
+Derived
 
-This project is licensed under the MIT License.
+Composite
