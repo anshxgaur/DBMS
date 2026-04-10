@@ -1,0 +1,9 @@
+DBMS over File System
+The file system has numerous issues, which were resolved with the help of DBMS. The issues with the file system are:
+
+Physical Access Management: Users are responsible for managing the physical details required to access the database.
+File System Suitability: File systems are effective for handling small databases but lack efficiency for larger ones.
+Concurrency Issues: For large databases, the operating system struggles to manage concurrency effectively, leading to potential conflicts.
+Single-User Access: In a file system, only one user can access the entire dataset at a time, limiting scalability and multi-user functionality.
+Data access: In a file system, accessing data was difficult and insecure as well. Accessing data concurrently was not possible.
+No Backup and Recovery: There is no backup and recovery in the file system, which can lead to data loss.
