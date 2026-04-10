@@ -1,4 +1,4 @@
-DBMS over File System
+DBMS v/s File System
 The file system has numerous issues, which were resolved with the help of DBMS. The issues with the file system are:
 
 Physical Access Management: Users are responsible for managing the physical details required to access the database.
