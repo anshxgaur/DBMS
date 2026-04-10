@@ -13,3 +13,10 @@ Entity: The entity is a real-world object, represented using a rectangular box.
 
 Strong Entity: A strong entity set has a primary key and all the tuples of the set can be identified using that primary key
 Weak entity: When an entity does not have sufficient attributes to form a primary key. Weak entities are associated with another strong entity set also known as identifying an entity. A weak entity's existence depends upon the existence of its identifying entity. The weak entity is represented using a double-lined or bold-lined rectangle. 
+
+Attribute: Attribute is the properties or characteristics of the real-world object. It is represented using an oval. 
+
+Key attribute: The attribute which determines each entity uniquely is known as the Key attribute. It is represented by an oval with an underlying line. 
+Composite Attribute: An attribute that is composed of many other attributes. E.g. address is an attribute it is formed of other attributes like state, district, city, street, etc. It is represented using an oval comprises of many other ovals. 
+Multivalued Attribute: An attribute that can have multiple values, like a mobile number. It is represented using a double-lined oval. 
+Derived attribute: An attribute that can be derived from other attributes. E.g. Age is an attribute that can be derived from another attribute Data of Birth. It is represented using a dashed oval.
