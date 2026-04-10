@@ -7,3 +7,9 @@ The file system has numerous issues, which were resolved with the help of DBMS. 
 4- Single-User Access: In a file system, only one user can access the entire dataset at a time, limiting scalability and multi-user functionality.
 5- Data access: In a file system, accessing data was difficult and insecure as well. Accessing data concurrently was not possible.
 6- No Backup and Recovery: There is no backup and recovery in the file system, which can lead to data loss.
+
+
+Entity: The entity is a real-world object, represented using a rectangular box.
+
+Strong Entity: A strong entity set has a primary key and all the tuples of the set can be identified using that primary key
+Weak entity: When an entity does not have sufficient attributes to form a primary key. Weak entities are associated with another strong entity set also known as identifying an entity. A weak entity's existence depends upon the existence of its identifying entity. The weak entity is represented using a double-lined or bold-lined rectangle. 
