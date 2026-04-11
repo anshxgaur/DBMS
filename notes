@@ -8,6 +8,9 @@ The file system has numerous issues, which were resolved with the help of DBMS. 
 5- Data access: In a file system, accessing data was difficult and insecure as well. Accessing data concurrently was not possible.
 6- No Backup and Recovery: There is no backup and recovery in the file system, which can lead to data loss.
 
+Entity!!!!
+
+
 
 Entity: The entity is a real-world object, represented using a rectangular box.
 
@@ -34,3 +37,12 @@ Partial Participation: Some entities in the entity set participate in the relati
 Example:
 In the same "Manages" relationship:
 If not all employees are managers, then Emp has partial participation in the "Manages" relationship.
+
+
+Cardinality in DBMS
+Cardinality of relation expresses the maximum number of possible relationship occurrences for an entity participating in a relationship. Cardinality of a relationship can be defined as the number of times an entity of an entity set participates in a relationship set. Let's suppose a binary relationship R between two entity sets A and B.  The relationship must have one of the following mapping cardinalities:
+
+One-to-One: When one entity of A is related to at most one entity of B, and vice-versa.
+One-to-Many: When one entity of A is related to one or more than one entity of B. Whereas B is associated with at most one entity in A. 
+Many-to-One: When one entity of B is related to one or more than one entity of A. Whereas A is associated with at most one entity in B. 
+Many-to-Many: Any number of entities of A is related to any number of entities of B, and vice-versa. 
