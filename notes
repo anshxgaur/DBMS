@@ -20,3 +20,17 @@ Key attribute: The attribute which determines each entity uniquely is known as t
 Composite Attribute: An attribute that is composed of many other attributes. E.g. address is an attribute it is formed of other attributes like state, district, city, street, etc. It is represented using an oval comprises of many other ovals. 
 Multivalued Attribute: An attribute that can have multiple values, like a mobile number. It is represented using a double-lined oval. 
 Derived attribute: An attribute that can be derived from other attributes. E.g. Age is an attribute that can be derived from another attribute Data of Birth. It is represented using a dashed oval.
+
+
+Relationship: A relationship is an association between two or more entities. Entities are connected or related to each other and this relationship is represented using a diamond. 
+
+Participation Constraint: It specifies the maximum or a minimum number of relationship instances in which any entity can participate. In simple words, participation means how an entity is linked to a relationship.
+
+Total Participation: Every entity in the entity set participates in at least one relationship in the relationship set.
+Example:
+In the "Manages" relationship between Emp (Employee) and Dept (Department):
+If every department must have a manager, then Dept has total participation in the "Manages" relationship.
+Partial Participation: Some entities in the entity set participate in the relationship, but not all.
+Example:
+In the same "Manages" relationship:
+If not all employees are managers, then Emp has partial participation in the "Manages" relationship.
