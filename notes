@@ -50,3 +50,11 @@ One-to-One: When one entity of A is related to at most one entity of B, and vice
 One-to-Many: When one entity of A is related to one or more than one entity of B. Whereas B is associated with at most one entity in A. 
 Many-to-One: When one entity of B is related to one or more than one entity of A. Whereas A is associated with at most one entity in B. 
 Many-to-Many: Any number of entities of A is related to any number of entities of B, and vice-versa. 
+
+
+
+Cardinality	                                                   Minimum No. of tables
+1:1 cardinality with partial participation of both entities	         2
+1:1 cardinality with a total participation of at least 1 entity	     1
+1:n cardinality	                                                     2
+m:n cardinality	                                                     3
