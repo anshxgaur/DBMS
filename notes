@@ -39,7 +39,11 @@ In the same "Manages" relationship:
 If not all employees are managers, then Emp has partial participation in the "Manages" relationship.
 
 
-Cardinality in DBMS
+Cardinality in DBMS!!!!
+
+
+
+
 Cardinality of relation expresses the maximum number of possible relationship occurrences for an entity participating in a relationship. Cardinality of a relationship can be defined as the number of times an entity of an entity set participates in a relationship set. Let's suppose a binary relationship R between two entity sets A and B.  The relationship must have one of the following mapping cardinalities:
 
 One-to-One: When one entity of A is related to at most one entity of B, and vice-versa.
