@@ -130,4 +130,3 @@ FROM students s
 RIGHT JOIN programs p
 ON s.program_id = p.program_id;
 
-
