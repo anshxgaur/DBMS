@@ -65,4 +65,9 @@ m:n cardinality	                                                     3
 
 1) Total students:
 COUNT : SELECT COUNT(*) FROM students;
-2)
+2) Avg admission year :
+    SELECT AVG(EXTRACT(YEAR FROM ADMISSION_DATE)
+    FROM students;
+3) Earliset & latest Admission :
+SELECT MIN(ADMISSION_DATE),MAX(ADMISSION_DATE) FROM
+students;
