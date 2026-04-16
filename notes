@@ -9,7 +9,7 @@ The file system has numerous issues, which were resolved with the help of DBMS. 
 5- Data access: In a file system, accessing data was difficult and insecure as well. Accessing data concurrently was not possible.
 6- No Backup and Recovery: There is no backup and recovery in the file system, which can lead to data loss.
 
-Entity!!!!
+Entity!!!!/
 
 
 
@@ -81,4 +81,4 @@ SELECT * FROM students ORDER BY FIRST_NAME DESC;
 
 2 . GROUP BY clause : GROUP BY is used to group rows having the same values in a column .mostly used in aggregreate funct:
 code: SELECT PROGRAM , COUNT(*) AS TOTAL 
-FROM students GROUP BY 
+FROM students GROUP BY  
