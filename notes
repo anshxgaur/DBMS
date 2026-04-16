@@ -106,3 +106,28 @@ INSERT ALL
     INTO Course VALUES (102, 'MBA', '2 Years', 80000)
     INTO Course VALUES (103, 'Data Science', '1 Year', 120000)
 SELECT * FROM dual;
+ADVANCE JOIN 
+
+INNER JOIN :
+
+SELECT s.name, p.program_name
+FROM students s
+INNER JOIN programs p
+ON s.program_id = p.program_id;
+
+OUTER JOIN :( LEFT JOIN)
+
+
+SELECT s.name, p.program_name
+FROM students s
+LEFT JOIN programs p
+ON s.program_id = p.program_id;
+
+
+OUTER JOIN :(RIGHT JOIN )
+SELECT s.name, p.program_name
+FROM students s
+RIGHT JOIN programs p
+ON s.program_id = p.program_id;
+
+
