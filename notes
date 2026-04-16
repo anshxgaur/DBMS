@@ -63,11 +63,22 @@ m:n cardinality	                                                     3
 
 
 
-1) Total students:
-COUNT : SELECT COUNT(*) FROM students;
+1. Total Students
+SELECT COUNT(*) FROM students;
+
 2) Avg admission year :
     SELECT AVG(EXTRACT(YEAR FROM ADMISSION_DATE)
     FROM students;
 3) Earliset & latest Admission :
 SELECT MIN(ADMISSION_DATE),MAX(ADMISSION_DATE) FROM
 students;
+
+!)desc(DESC) order.
+CODE: SELECT * FROM students ORDER BY FIRST_NAME;
+BY DEFAULT , ORDER BY gives the sequence in asc order.
+if you want to get in des order 
+SELECT * FROM students ORDER BY FIRST_NAME DESC;
+
+2 . GROUP BY clause : GROUP BY is used to group rows having the same values in a column .mostly used in aggregreate funct:
+code: SELECT PROGRAM , COUNT(*) AS TOTAL 
+FROM students GROUP BY 
