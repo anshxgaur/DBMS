@@ -101,3 +101,8 @@ Course_Name : VARCHAR(50),
 Duration VARCHAR(20), 
 Fees INT
 };
+INSERT ALL
+    INTO Course VALUES (101, 'BTech', '4 Years', 1000000)
+    INTO Course VALUES (102, 'MBA', '2 Years', 80000)
+    INTO Course VALUES (103, 'Data Science', '1 Year', 120000)
+SELECT * FROM dual;
