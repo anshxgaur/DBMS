@@ -82,3 +82,22 @@ SELECT * FROM students ORDER BY FIRST_NAME DESC;
 2 . GROUP BY clause : GROUP BY is used to group rows having the same values in a column .mostly used in aggregreate funct:
 code: SELECT PROGRAM , COUNT(*) AS TOTAL 
 FROM students GROUP BY  
+
+3> having clause : HAVING is used to filter grpoups (after GROUP BY)
+SELECT PROGRAM, COUNT(*) AS total
+FROM students
+GROUP BY PROGRAM
+HAVING COUNT(*) > 10;
+
+
+join combine data from two or more tables using a common column 
+example : student table + course table
+
+create:
+CREATE TABLE  COURSE{
+COURSE_ID INT PRIMARY KEY ,
+Student_ID INT,
+Course_Name : VARCHAR(50),
+Duration VARCHAR(20), 
+Fees INT
+};
